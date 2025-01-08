@@ -13,3 +13,5 @@ sudo docker start <container_id>
 #Replace the {directory with the directory in which the inputdata file is present
 sudo docker cp {directory}/inputdata csvserver:/csvserver/inputdata
 
+**In Step 3 also you need to run the below mentioned command to start the csvserver without the error as inputdata not found**
+sudo docker cp {directory}/inputdata csvserver:/csvserver/inputdata
